@@ -1,0 +1,35 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "license": "Apache-2.0",
+  "author": "TALACATA",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "emulate:preprod": "firebase emulators:start --only functions:api_preprod,functions:dailyUserNotifications_preprod",
+    "deploy:preprod": "firebase deploy --only functions:api_preprod,functions:dailyUserNotifications_preprod",
+    "deploy:prod": "firebase deploy --only functions:api_prod,functions:dailyUserNotifications_prod",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.mjs",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^17.2.1",
+    "expo-server-sdk": "^4.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
