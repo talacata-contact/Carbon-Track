@@ -37,7 +37,7 @@ import {
 } from '@/services/referencesService/logements';
 
 export default function CreateLogement({ onClose }) {
-  const [mode, setMode] = useState<string>('creation');
+  const [mode, setMode] = useState<string>('usage');
   const [chauffages, setChauffages] = useState([]);
   const [logements, setLogements] = useState([]);
   const [selectedLogementId, setSelectedLogementId] = useState<string | null>(null);
@@ -319,7 +319,8 @@ const styles = StyleSheet.create({
   },
   label: { 
     fontWeight: '600', 
-    marginTop: 10 
+    marginTop: 10,
+    color: 'black'
   },
   input: { 
     borderColor: tabColors['logement'], 
