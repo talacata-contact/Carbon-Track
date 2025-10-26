@@ -295,6 +295,7 @@ const styles = StyleSheet.create({
   label: {
     fontWeight: '600',
     marginTop: 10,
+    color: 'black'
   },
   input: {
     borderColor: tabColors['logement'],

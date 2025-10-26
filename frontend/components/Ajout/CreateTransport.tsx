@@ -33,7 +33,7 @@ import { createEvent } from '@/services/evenementsService/evenements';
 import { getAllCategoriesTransports, getTransportById, getTransportsFavoris } from '@/services/referencesService/transports';
 
 export default function CreateTransport({ onClose }) {
-  const [mode, setMode] = useState<'creation' | 'usage'>('creation');
+  const [mode, setMode] = useState<string>('usage');
   const [categories, setCategories] = useState([]);
   const [transports, setTransports] = useState([]);
   const [selectedTransportId, setSelectedTransportId] = useState<string | null>(null);
@@ -278,27 +278,25 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 12,
     maxHeight: '90%',
-    padding: 20,
+    padding: 15,
   },
   label: {
-    fontWeight: '700',
-    fontSize: 16,
-    marginTop: 12,
+    fontWeight: '600',
+    marginTop: 10,
+    color: 'black'
   },
   input: {
     borderColor: tabColors['transport'],
     borderWidth: 1,
-    padding: 10,
-    marginTop: 6,
-    borderRadius: 12,
-    fontSize: 16,
+    padding: 8,
+    marginTop: 5,
+    borderRadius: 10,
   },
   pickerContainer: {
     borderColor: tabColors['transport'],
     borderWidth: 1,
     borderRadius: 12,
     marginTop: 6,
-    overflow: 'hidden',
   },
   picker: {
     height: 50,
@@ -306,21 +304,19 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     backgroundColor: tabColors['transport'],
-    paddingVertical: 14,
-    borderRadius: 12,
+    paddingVertical: 12,
+    borderRadius: 10,
     alignItems: 'center',
   },
   cancelButton: {
     backgroundColor: '#ddd',
-    marginTop: 12,
+    marginTop: 10,
   },
   buttonText: {
     color: '#fff',
-    fontWeight: '700',
-    fontSize: 16,
+    fontWeight: '600',
   },
   dateInput: {
     justifyContent: 'center',
-    paddingVertical: 12,
   },
 });

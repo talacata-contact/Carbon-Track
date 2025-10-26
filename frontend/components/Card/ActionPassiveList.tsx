@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
   btnAbsence: { backgroundColor: '#007AFF', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 8 },
   overlay: { flex: 1, backgroundColor: '#000000aa', justifyContent: 'center', padding: 20 },
   modal: { backgroundColor: 'white', borderRadius: 10, padding: 15, maxHeight: '80%' },
-  label: { fontWeight: '600', marginTop: 10 },
+  label: { fontWeight: '600', marginTop: 10, color: 'black' },
   dateBtn: { borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 8, marginTop: 5 },
   input: { borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 8, marginTop: 5, backgroundColor: '#fff' },
   pickerContainer: { borderWidth: 1, borderColor: '#ccc', borderRadius: 10, marginTop: 5 },
